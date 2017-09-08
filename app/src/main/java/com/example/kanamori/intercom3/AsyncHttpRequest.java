@@ -92,7 +92,7 @@ public class AsyncHttpRequest extends AsyncTask<byte[], Void, String> {
     private void uploadS3(File fil) {
         AmazonS3Client s3Client = new AmazonS3Client(
                 new BasicAWSCredentials(
-                        "<AWS_ACCOUNT_ID>", "<AWS_SECRET_KEY>") );
+                        "<ACCESS_KEY>", "<SECRET_ACCESS_KEY>") );
         PutObjectRequest por = new PutObjectRequest(
                 "doorfonehack",
                 "img.jpg",

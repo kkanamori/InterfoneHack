@@ -42,10 +42,9 @@ public class MainActivity extends Activity {
                                            int height) {
                     // TODO Auto-generated method stub
                     Camera.Parameters parameters = myCamera.getParameters();
-                    parameters.setPreviewSize(width, height);
-                    parameters.setPreviewSize(256,256);
+                    parameters.setRotation(270);
                     //Log.d("debug",parameters.flatten());
-//                    myCamera.setParameters(parameters);
+                    myCamera.setParameters(parameters);
                     myCamera.startPreview();
 
                 }
